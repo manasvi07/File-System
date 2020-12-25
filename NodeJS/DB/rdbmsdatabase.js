@@ -1,10 +1,3 @@
-/*************************************************************************************************************************************************************/
-/*
-Name: Knex
-Functionality: This JavaScript file will initiate the Knex and connect to the SQL Database.
-*/
-/*************************************************************************************************************************************************************/
-//Required Modules
 var crypto = require("crypto-js");
 var appRoot = require('app-root-path');
 const key='depwjku#'

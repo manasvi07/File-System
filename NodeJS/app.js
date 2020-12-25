@@ -5,19 +5,6 @@ const commonMiddleware = require('./middleware/common');
 var appRoot = require('app-root-path');
 require('dotenv').config({ path: `${appRoot}` + '/.env' });
 
-
-
-app.use(function (req, res, next) {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Content-disposition, Accept, Authorization, User-Role, Access-Token, Search-Key");
-    if ('OPTIONS' == req.method) {
-        res.sendStatus(200);
-    }
-    else {
-        next();
-    }
-});
-
 commonMiddleware(app);
 
 app.use(function (err, req, res, next) {

@@ -184,7 +184,7 @@ function Email(email) {
 });
 email.forEach(function (to, i , array) {
 	var mailOptions = {
-		from: 'mnsvi07@gmail.com',
+		from: 'testconnection21@gmail.com',
 		to: to["email"],
 		subject: 'Notification',
 		text: 'A new File/Folder is added!'

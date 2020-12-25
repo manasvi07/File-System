@@ -1,4 +1,4 @@
-var knexClient = require('../DB/rdbmsdatabase.js');
+var knexClient = require('../DB/databaseConn.js');
 var nodemailer = require('nodemailer');
 const key='depwjku#'
 var crypto = require("crypto-js");

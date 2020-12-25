@@ -1,0 +1,566 @@
+{
+	"info": {
+		"_postman_id": "ed6191ce-a634-413c-84e5-756f39ea1f73",
+		"name": "File System APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/addUserDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/addUserDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addUserDetails"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/addUserDetails",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Manasvi\",\r\n    \"email\":\"mnsvi07@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/addUserDetails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addUserDetails"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Content-disposition, Accept, Authorization, User-Role, Access-Token, Search-Key"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "88"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"58-+udUUuRSx7BlKYWIg7jGk4ftwvk\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Dec 2020 13:06:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"statusCode\": 1,\n    \"result\": [\n        1\n    ],\n    \"message\": \"Details added successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/addFilesFolders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/addFilesFolders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addFilesFolders"
+					]
+				},
+				"description": "To add files and folders"
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/addFilesFolders",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"file\": [\r\n        {\r\n            \"name\": \"Folder 1\",\r\n            \"parent\": null\r\n        },\r\n        {\r\n            \"name\": \"Folder 4\",\r\n            \"parent\": \"Folder 1\"\r\n        },\r\n        {\r\n            \"name\": \"File 3\",\r\n            \"parent\": \"Folder 4\"\r\n        },\r\n        {\r\n            \"name\": \"Folder 6\",\r\n            \"parent\": \"Folder 4\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/addFilesFolders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addFilesFolders"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Content-disposition, Accept, Authorization, User-Role, Access-Token, Search-Key"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "435"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b3-epLVgV6FPDLgIRLy+THa9JdshL0\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Dec 2020 13:06:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"statusCode\": 1,\n    \"result\": [\n        {\n            \"id\": 1,\n            \"file_and_folder\": \"Folder 1\",\n            \"parent_name\": null,\n            \"url\": null\n        },\n        {\n            \"id\": 2,\n            \"file_and_folder\": \"Folder 4\",\n            \"parent_name\": \"Folder 1\",\n            \"url\": \"Folder 1/Folder 4\"\n        },\n        {\n            \"id\": 3,\n            \"file_and_folder\": \"File 3\",\n            \"parent_name\": \"Folder 4\",\n            \"url\": \"Folder 1/Folder 4/File 3\"\n        },\n        {\n            \"id\": 4,\n            \"file_and_folder\": \"Folder 6\",\n            \"parent_name\": \"Folder 4\",\n            \"url\": \"Folder 1/Folder 4/Folder 6\"\n        }\n    ],\n    \"message\": \"Details added successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/delFilesFolders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"file\":[\"Folder 1\",\"Folder 4\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/delFilesFolders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delFilesFolders"
+					]
+				},
+				"description": "To delete files or folders"
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/delFilesFolders",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"file\":[\"Folder 1\",\"Folder 4\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/delFilesFolders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"delFilesFolders"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Content-disposition, Accept, Authorization, User-Role, Access-Token, Search-Key"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "88"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"58-MuiA3mvsbGx5FY+drn0XJ68Mu3g\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Dec 2020 13:09:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"statusCode\": 1,\n    \"result\": 4,\n    \"message\": \"Details Deleted successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/getDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getDetails"
+					]
+				},
+				"description": "To get the hierarchy of files and folders"
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/getDetails",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/getDetails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getDetails"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Content-disposition, Accept, Authorization, User-Role, Access-Token, Search-Key"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "317"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"13d-tkpsZV9R/qQNJx746aikTKdlZtA\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Dec 2020 13:13:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"statusCode\": 1,\n    \"result\": [\n        {\n            \"file_and_folder\": \"Folder 1\",\n            \"url\": null\n        },\n        {\n            \"file_and_folder\": \"Folder 4\",\n            \"url\": \"Folder 1/Folder 4\"\n        },\n        {\n            \"file_and_folder\": \"File 3\",\n            \"url\": \"Folder 1/Folder 4/File 3\"\n        },\n        {\n            \"file_and_folder\": \"Folder 6\",\n            \"url\": \"Folder 1/Folder 4/Folder 6\"\n        }\n    ],\n    \"message\": \"Details retrieved successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/searchFileFolder?file=Folder 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/searchFileFolder?file=Folder 1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"searchFileFolder"
+					],
+					"query": [
+						{
+							"key": "file",
+							"value": "Folder 1"
+						}
+					]
+				},
+				"description": "To search for a particular file or folder"
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/searchFileFolder?file=Folder 1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/searchFileFolder?file=Folder 4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"searchFileFolder"
+							],
+							"query": [
+								{
+									"key": "file",
+									"value": "Folder 4"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Content-disposition, Accept, Authorization, User-Role, Access-Token, Search-Key"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "118"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"76-4wRpVl56qxoRGCIMIENtdN2hibs\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Dec 2020 13:14:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"statusCode\": 1,\n    \"result\": [\n        {\n            \"url\": \"Folder 1/Folder 4\"\n        }\n    ],\n    \"message\": \"Details retrieved successfully.\"\n}"
+				}
+			]
+		}
+	]
+}
